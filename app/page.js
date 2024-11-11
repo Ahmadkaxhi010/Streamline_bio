@@ -1,11 +1,11 @@
-import MuxVideo from "@mux/mux-video-react";
-import MainHeader from "@/components/headers/MainHeader";
-import HomeComponent from "@/components/headers/home/HomeComponent";
+import Footer from "@/components/footer/Footer";
+import HomeComponent from "@/components/home/HomeComponent";
 
 export default function Home() {
   return (
     <>
       <HomeComponent></HomeComponent>
+      <Footer />
     </>
   );
 }

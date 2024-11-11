@@ -1,8 +1,12 @@
 // pages/about.js
 import MuxVideo from "@mux/mux-video-react";
-
+import FoundersComp from "@/components/Leadership/FoundersComp";
+import KeyHires from "@/components/Leadership/KeyHires";
+import Advisors from "@/components/Leadership/Advisors";
+import Footer from "@/components/footer/Footer";
 export default function AboutPage() {
   return (
+    <>
     <section>
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background Video */}
@@ -25,14 +29,11 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <div>
-        <h1 className="text-5xl font-bold mb-4 bg-transparent">About</h1>
-        <p className="text-xl max-w-xl bg-transparent text-justify">
-          We’re an AI and robotics company, with roots in Norway and Silicon
-          Valley. Our team is building a world where you do more of what you
-          love, while your humanoid companions handle the rest.
-        </p>
-      </div>
     </section>
+    <FoundersComp />
+    <Advisors />
+    <KeyHires />  
+    <Footer />
+    </>
   );
 }

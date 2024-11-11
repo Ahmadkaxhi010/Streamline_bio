@@ -14,13 +14,16 @@ export default function MainHeader() {
   return (
     <header className="h-[70px] px-[32px] fixed w-full z-[99] transition-all duration-300 ease-in group border-b-[1px] lg:py-0 lg:h-[60px] xl:px-0 border-b-[#0000]">
       <div className="bg-transparent flex justify-between items-center h-full xl:w-[2036px] xl:mx-auto xl:px-[32px]">
-        <a
+        <Link
           className="bg-transparent lg:h-full lg:flex lg:justify-center lg:items-center"
           aria-label="Home"
           href="/"
         >
           <div className="relative bg-transparent">
-            <svg
+          <div>
+            <img src="/images/mainl.png" alt="Logo" className="h-8" />
+          </div>
+            {/* <svg
               className="bg-transparent w-[32px] h-[20px] transition-colors duration-300 relative z-[1]"
               width="26"
               height="16"
@@ -69,9 +72,9 @@ export default function MainHeader() {
                 d="M5.95483 12.205C5.95483 11.2577 5.95483 10.3104 5.95483 9.36312C5.95483 8.88589 6.09204 8.47666 6.63727 8.44206C7.26006 8.4015 7.46169 8.83936 7.46527 9.36431C7.4772 11.2589 7.47839 13.1535 7.46527 15.0469C7.46169 15.5707 7.25648 16.0121 6.63727 15.9704C6.0992 15.9346 5.95483 15.5253 5.95603 15.0457C5.95961 14.0984 5.95603 13.1511 5.95603 12.2038L5.95483 12.205Z"
                 fill="#41403C"
               ></path>
-            </svg>
+            </svg> */}
           </div>
-        </a>
+        </Link>
         <button
           onClick={toggleMenu}
           className="w-[24px] flex justify-between gap-y-[5px] flex-col z-[100] lg:hidden"
@@ -84,13 +87,13 @@ export default function MainHeader() {
         <nav className="bg-transparent hidden lg:self-end lg:block ">
           <div className="bg-transparent flex gap-x-[40px] font-medium uppercase text-[11px] leading-[20px] tracking-[0.8px] h-fit items-center text-neoFrost transition-colors duration-300">
             <div className="bg-transparent flex gap-x-[50px]">
-              <a
+            <Link
                 className="bg-transparent text-[#e5e7eb] block relative whitespace-nowrap font-medium transition-opacity duration-200 h-[37px] opacity-50 hover:opacity-100"
                 href="/"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 className="bg-transparent block relative text-[#e5e7eb] whitespace-nowrap font-medium transition-opacity duration-200 h-[37px] opacity-50 hover:opacity-100"
                 href="/about"
               >
@@ -101,22 +104,22 @@ export default function MainHeader() {
                     style={{ opacity: "1", transformOrigin: "50% 0px 0px" }}
                   ></div>
                 )}
-              </a>
-              <a
+              </Link>
+              <Link
                 className="bg-transparent text-[#e5e7eb] block relative whitespace-nowrap font-medium transition-opacity duration-200 h-[37px] opacity-50 hover:opacity-100"
                 href="/discover"
               >
                 Discover
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
-        <a
+        <Link
           className="whitespace-nowrap font-medium uppercase text-[12px] tracking-[0.8px] leading-[20px] text-white self-end hidden h-[37px] hover:opacity-50 [transition:opacity_0.3s,color_0.3s] lg:block"
-          href="/neo"
+          href="/"
         >
           Get updates
-        </a>
+        </Link>
       </div>
       {isMenuOpen && (
         <div

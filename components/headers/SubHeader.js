@@ -1,29 +1,27 @@
+import Link from "next/link";
 const SubHeader = () => {
   return (
     <div>
       <section className="header-container header-container-solid">
-        <a href="/" className="w-inline-block">
-          <img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/646776cb8247278ec0d7427a/670f1fb9ef9f3b822015fdac_1x.svg"
-            alt=""
-            className="neo-nav-logo-static"
-          />
-        </a>
+        <Link href="/" className="w-inline-block">
+          <div>
+            <img src="/images/mainl.png" alt="Logo" className="h-8" />
+          </div>
+        </Link>
         <div className="nav-items-container">
-          <a href="/" className="nav-item nav-dark">
+          <Link href="/" className="nav-item nav-dark">
             Home
-          </a>
-          <a href="/about" className="nav-item nav-dark">
+          </Link>
+          <Link href="/about" className="nav-item nav-dark">
             about
-          </a>
-          <a
+          </Link>
+          <Link
             href="/discover"
             aria-current="page"
             className="nav-item nav-dark w--current"
           >
             Discover
-          </a>
+          </Link>
         </div>
         <div id="mobile-menu" className="menu-button-container">
           <div className="menu-line"></div>
@@ -34,33 +32,27 @@ const SubHeader = () => {
       </section>
       <div className="mobile-menu-container">
         <div className="mobile-links-container">
-          <a href="/neo" className="mobile-menu-link first-link">
-            NEO
-          </a>
-          <a href="/eve" className="mobile-menu-link">
-            EVE
-          </a>
-          <a
+          <Link href="/neo" className="mobile-menu-link first-link">
+            Home
+          </Link>
+          <Link
             href="/discover"
             aria-current="page"
             className="mobile-menu-link w--current"
           >
             Discover
-          </a>
-          <a href="/careers" className="mobile-menu-link">
-            Careers
-          </a>
-          <a href="/about" className="mobile-menu-link">
+          </Link>
+          <Link href="/about" className="mobile-menu-link">
             About
-          </a>
+          </Link>
         </div>
         <div className="lower-mobile-menu-links">
-          <a href="/privacy-policy" className="mobile-menu-sub">
+          <Link href="/privacy-policy" className="mobile-menu-sub">
             Privacy &amp;&nbsp;Cookies
-          </a>
-          <a href="/terms-and-conditions" className="mobile-menu-sub">
+          </Link>
+          <Link href="/terms-and-conditions" className="mobile-menu-sub">
             Terms of Use
-          </a>
+          </Link>
           <div className="mobile-menu-sub">1X © 2024</div>
         </div>
       </div>

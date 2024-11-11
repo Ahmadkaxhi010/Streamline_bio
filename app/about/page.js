@@ -11,7 +11,7 @@ export default function AboutPage() {
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background Video */}
         <MuxVideo
-          src="/images/bgvid.mp4"
+          src="https://riue3ywnfwlztpvs.public.blob.vercel-storage.com/bgvid-VRRqCsIpjQGjrFaquAxvwa7liT4o9S.mp4"
           type="video/mp4"
           className=" relative w-full h-full object-cover z-10"
           autoPlay

@@ -33,7 +33,7 @@ const HomeComponent = () => {
       {/* Hero Section */}
       <section className="relative w-full h-screen overflow-hidden bg-black">
         <MuxVideo
-          src="https://riue3ywnfwlztpvs.public.blob.vercel-storage.com/clean-AKUFkeNSg3lQO4N2tVcrKgWH8ANgSn.mp4"
+          src="https://yyqspdpk0yebvddv.public.blob.vercel-storage.com/clean-39o8OfAaGNk7uf8anSbIapYPE9LP92.mp4"
           type="video/mp4"
           className="absolute inset-0 w-full h-full object-cover z-0"
           autoPlay
@@ -64,7 +64,7 @@ const HomeComponent = () => {
         data-aos="fade-up"
       >
         <MuxVideo
-          src="https://riue3ywnfwlztpvs.public.blob.vercel-storage.com/bgvid-VRRqCsIpjQGjrFaquAxvwa7liT4o9S.mp4"
+          src="https://yyqspdpk0yebvddv.public.blob.vercel-storage.com/bgvid2-62kif4jOmNHfz57PXAuW8jK9se2UfG.mp4"
           type="video/mp4"
           className="relative w-full h-full object-cover z-10"
           autoPlay

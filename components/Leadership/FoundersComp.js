@@ -3,7 +3,7 @@ const FoundersComp = () => {
   return (
     <>
       <div className="flex justify-center items-center mt-10">
-        <h1 className="text-2xl md:text-5xl">Meet Our Team</h1>
+        <h1 className="text-2xl font-extrabold md:text-5xl">Meet Our Team</h1>
       </div>
       <div className="flex flex-col-reverse ml-6 mr-6 md:flex-row bg-white">
         <div className="md:w-1/2 p-6 flex items-center">

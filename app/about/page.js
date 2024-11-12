@@ -20,9 +20,9 @@ export default function AboutPage() {
         />
 
         {/* Overlay Text */}
-        <div className=" absolute z-20 top-0 left-0 text-white p-8 bg-transparent flex items-center justify-between min-w-full min-h-screen">
-          <h1 className="text-5xl font-bold mb-4 bg-transparent">About</h1>
-          <p className="text-xl max-w-xl bg-transparent text-justify">
+        <div className=" absolute z-20 top-0 left-0 text-white p-2 md:p-8 bg-transparent flex items-center justify-between gap-6 min-w-full min-h-screen">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-transparent">About</h1>
+          <p className="text-sm md:text-xl max-w-xl bg-transparent text-justify">
             We’re an AI and robotics company, with roots in Norway and Silicon
             Valley. Our team is building a world where you do more of what you
             love, while your humanoid companions handle the rest.

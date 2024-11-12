@@ -12,38 +12,26 @@ export default function Footer() {
             <img src="/images/mainl.png" alt="Logo" className="h-8" />
           </div>
           </Link>
-          <p>1X © 2024</p>
+          <p>StreamLineBio © 2024</p>
         </div>
 
         {/* Navigation Links */}
         <div className="grid grid-cols-2 text-[#6f6f67] md:grid-cols-3 gap-6 text-center md:text-left">
           <div className="flex flex-col gap-2">
             <Link
-              href="#"
+              href="/"
               className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
             >
-              NEO
+              Home
             </Link>
             <Link
-              href="#"
-              className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
-            >
-              EVE
-            </Link>
-            <Link
-              href="#"
+              href="/about"
               className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
             >
               ABOUT
             </Link>
             <Link
-              href="#"
-              className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
-            >
-              CAREERS
-            </Link>
-            <Link
-              href="#"
+              href="/discover"
               className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
             >
               DISCOVER

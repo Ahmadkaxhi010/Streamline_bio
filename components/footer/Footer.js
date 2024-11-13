@@ -30,12 +30,12 @@ export default function Footer() {
             >
               ABOUT
             </Link>
-            <Link
+            {/* <Link
               href="/discover"
               className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
             >
               DISCOVER
-            </Link>
+            </Link> */}
           </div>
 
           {/* Social Media Links */}

@@ -15,7 +15,7 @@ export default function MainHeader() {
     <header className="h-[70px] px-[32px] fixed w-full z-[99] transition-all duration-300 ease-in group border-b-[1px] lg:py-0 lg:h-[60px] xl:px-0 border-b-[#0000]">
       <div className="bg-white flex justify-between items-center h-full xl:w-[2036px] xl:mx-auto xl:px-[32px]">
         <Link
-          className="bg-transparent lg:h-full lg:flex lg:justify-center lg:items-center"
+          className="bg-transparent ml-2 lg:h-full lg:flex lg:justify-center lg:items-center"
           aria-label="Home"
           href="/"
         >
@@ -55,7 +55,7 @@ export default function MainHeader() {
                   ></div>
                 )}
               </Link>
-              <Link
+              {/* <Link
                 className="bg-transparent text-black block relative whitespace-nowrap font-bold transition-opacity duration-200 h-[37px] opacity-50 hover:opacity-100"
                 href="/discover"
               >
@@ -66,7 +66,7 @@ export default function MainHeader() {
                     style={{ opacity: "1", transformOrigin: "50% 0px 0px" }}
                   ></div>
                 )}
-              </Link>
+              </Link> */}
             </div>
           </div>
         </nav>
@@ -97,12 +97,12 @@ export default function MainHeader() {
               >
                 About
               </Link>
-              <Link
+              {/* <Link
                 href="/discover"
                 className="bodyRegular border-b-[1px] py-[16px] text-neoGrey"
               >
                 Discover
-              </Link>
+              </Link> */}
             </nav>
           </div>
           <div className="px-[32px] py-[32px] bodyRegular text-neoGrey flex flex-col gap-y-[12px]">

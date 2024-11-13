@@ -4,14 +4,16 @@ const Advisors = () => {
   return (
     <>
       <div className="flex justify-center items-center mt-10">
-        <h1 className="text-2xl font-bold md:text-5xl">Key Strategic Advisors</h1>
+        <h1 className="text-2xl font-bold md:text-5xl">
+          Key Strategic Advisors
+        </h1>
       </div>
       <div className="flex justify-center items-center min-h-screen p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
           {/* Card for Dr. Dolores Baksh */}
           <div className="bg-white shadow-2xl rounded-lg p-6 flex flex-col items-center">
             <Image
-              src="/images/c12t.png" // Replace with actual image path
+              src="/images/Dolores.png" // Replace with actual image path
               alt="Dr. Dolores Baksh"
               width={100}
               height={100}
@@ -21,15 +23,25 @@ const Advisors = () => {
               Dr. Dolores Baksh, PhD
             </h2>
             <ul className="text-gray-700 text-sm mt-4 list-disc ml-8 space-y-2">
+              <li>CEO Hyperius Biotech</li>
               <li>
-                20+ years of cell & gene therapy professional and industry
-                experience
+                25+ years in Regen Med / CGT: Expertise in R&D, preclinical, PD,
+                operations/CMC, commercial
               </li>
-              <li>VP of Commercial, Akron Bio (a leading CDMO)</li>
-              <li>Previous experience as CEO at TAAV Biomanufacturing</li>
               <li>
-                Innovation Leader in CGT at GE Healthcare and marketing leader
-                at Cytiva
+                Strategic Leadership: Led global Life Sciences growth
+                initiatives
+              </li>
+              <li>
+                BD&L & Sales: Closed multi-$MM deals, multi-year collaborations
+                (Pharma/Biotech)
+              </li>
+              <li>
+                Product/Company Launches: In CGT sector (tech and therapy)
+              </li>
+              <li>
+                Financial Management, Diligence & Acquisitions: Oversaw $MM P&L,
+                closed deals
               </li>
             </ul>
             <div className="flex mt-2 space-x-4">
@@ -51,7 +63,7 @@ const Advisors = () => {
           {/* Card for Dr. Rodney Rietze */}
           <div className="bg-white shadow-2xl rounded-lg p-6 flex flex-col items-center">
             <Image
-              src="/images/c12t.png" // Replace with actual image path
+              src="/images/Rod.png" // Replace with actual image path
               alt="Dr. Rodney Rietze"
               width={100}
               height={100}
@@ -60,13 +72,22 @@ const Advisors = () => {
             <h2 className="text-xl font-bold text-purple-600">
               Dr. Rodney Rietze, PhD
             </h2>
-            <ul className="text-gray-700 text-sm mt-4 list-disc space-y-2">
-              <li>20+ years of experience in cell & gene therapies</li>
-              <li>CEO and Co-Founder of iVexSol</li>
+            <ul className="text-gray-700 text-sm mt-4 ml-6 list-disc space-y-2">
+              <li>Co-founder/CEO, iVexSol, 2018</li>
+              <li>25+ years in Regen Med + CGT</li>
               <li>
-                Previous experience as a Director at Novartis in cell therapy
+                Co-founder, Principal Investigator - Academia Center of
+                Excellence: Queensland Brain Institute
               </li>
-              <li>Senior Principal Scientist at Pfizer</li>
+              <li>
+                Discovery science/Clinical Trials: drug screening, cell
+                therapies
+              </li>
+              <li>Tech Transfer, Commercial Launch: Kymriah, T-Charge</li>
+              <li>
+                Fund Raising: $116M+ capital from various sources: Strategics,
+                Venture, PE, HNW investors
+              </li>
             </ul>
             <div className="flex mt-12 space-x-4">
               <Image

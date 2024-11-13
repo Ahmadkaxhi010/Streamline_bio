@@ -45,10 +45,10 @@ const FoundersComp = () => {
         <div className="md:w-1/2 flex justify-center items-center p-6">
           <div>
             <Image
-              src="/images/c11.png"
+              src="/images/Leo.png"
               alt="Arel Lidow"
-              width={1080}
-              height={1080}
+              width={380}
+              height={380}
               className="rounded-full"
             />
           </div>
@@ -58,10 +58,10 @@ const FoundersComp = () => {
         <div className="md:w-1/2 flex justify-center items-center p-6">
           <div>
             <Image
-              src="/images/c12t.png"
+              src="/images/Harvey.png"
               alt="Arel Lidow"
-              width={1080}
-              height={1080}
+              width={380}
+              height={380}
               className="rounded-full"
             />
           </div>

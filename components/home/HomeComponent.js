@@ -71,7 +71,6 @@ const HomeComponent = () => {
       {/* Hero Section */}
       <section className="relative w-full h-screen overflow-hidden bg-black">
         <MuxVideo
-          //src="https://yyqspdpk0yebvddv.public.blob.vercel-storage.com/clean-39o8OfAaGNk7uf8anSbIapYPE9LP92.mp4"
           src="/images/Cleanroom-level.mp4"
           type="video/mp4"
           className="absolute inset-0 w-full h-full object-cover z-0"
@@ -106,7 +105,6 @@ const HomeComponent = () => {
         data-aos="fade-up"
       >
         <MuxVideo
-          // src="https://yyqspdpk0yebvddv.public.blob.vercel-storage.com/bgvid2-62kif4jOmNHfz57PXAuW8jK9se2UfG.mp4"
           src="/images/AI-driven.mp4"
           type="video/mp4"
           className="absolute inset-0 w-full h-full object-cover"
@@ -269,11 +267,6 @@ const HomeComponent = () => {
         <h2 className="text-3xl md:text-5xl font-bold mb-8">
           Automated Unit Operations
         </h2>
-        {/* <img
-          src="/images/home3.gif" // Replace with actual path
-          alt="Lab Setup with Quantum, Xuri, LOVO, Prodigy, and Robotic Arm"
-          className="w-full h-auto rounded-lg shadow-lg"
-        /> */}
          <MuxVideo
           src="/images/unit-operations.mp4"
           type="video/mp4"
@@ -284,40 +277,6 @@ const HomeComponent = () => {
           loop
           muted
         />
-        {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <MuxVideo
-            src="/videos/take_bag.mp4"
-            type="video/mp4"
-            className="w-full"
-            autoPlay
-            loop
-            muted
-          />
-          <MuxVideo
-            src="/videos/rub_tube.mp4"
-            type="video/mp4"
-            className="w-full"
-            autoPlay
-            loop
-            muted
-          />
-          <MuxVideo
-            src="/videos/sampling_squeeze.mp4"
-            type="video/mp4"
-            className="w-full"
-            autoPlay
-            loop
-            muted
-          />
-          <MuxVideo
-            src="/videos/insert_tube.mp4"
-            type="video/mp4"
-            className="w-full"
-            autoPlay
-            loop
-            muted
-          />
-        </div> */}
       </section>
     </>
   );

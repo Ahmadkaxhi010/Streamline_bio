@@ -30,7 +30,7 @@ export default function AboutPage() {
               and bottlenecks. However, CGT processes are inherently complex,
               multi-step, and notoriously variable; this makes it extremely
               difficult to develop an one-size-fits-all automation solution.
-              That’s where we come in. Streamline Bio offers an AI-driven
+              <br></br>That’s where we come in. Streamline Bio offers an AI-driven
               robotics platform that not only automates but is designed to be
               flexible, machine-agnostic, and fully digital-native.
             </p>

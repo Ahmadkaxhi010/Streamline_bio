@@ -258,50 +258,6 @@ const HomeComponent = () => {
         </div>
       </section>
 
-      {/* <section
-        className="py-24 px-8 bg-gray-100 text-gray-800 text-center"
-        data-aos="fade-up"
-      >
-        <h2 className="text-3xl md:text-5xl font-bold mb-8">
-          Join the Waitlist
-        </h2>
-        <p className="text-lg mb-8">
-          Be the first to experience our AI-driven automation solution.
-        </p>
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <input
-            type="text"
-            placeholder="Company Name"
-            value={companyName}
-            onChange={(e) => setCompanyName(e.target.value)}
-            className="border border-gray-300 p-3 rounded-md w-full md:w-1/4"
-          />
-          <div className="flex flex-col w-full md:w-1/4">
-            <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={handleEmailChange}
-              className="border border-gray-300 p-3 rounded-md"
-            />
-            {emailError && (
-              <p className="text-red-500 text-sm mt-1">
-                Please enter a valid email address.
-              </p>
-            )}
-          </div>
-          <button
-            onClick={handleJoinWaitlist}
-            disabled={!isButtonEnabled} // Disable button if fields are empty or email is invalid
-            className={`${
-              !isButtonEnabled ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-600"
-            } text-white px-6 py-3 rounded-md font-semibold`}
-          >
-            {isLoading ? "Joining..." : "Join Waitlist"}
-          </button>
-        </div>
-      </section> */}
-
       {/* Key Features Section */}
       <section
         className="py-24 px-8 bg-white text-gray-800 text-center md:flex md:flex-col md:gap-10"

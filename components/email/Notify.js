@@ -51,7 +51,7 @@ async function NotifyEmail(props) {
     color: "#8898aa",
     fontSize: "12px",
     textAlign: "center",
-    "@media(max-width: 600px)": {
+    "@media(maxWidth: 600px)": {
       fontSize: "10px",
     },
   };
@@ -78,7 +78,7 @@ async function NotifyEmail(props) {
               fontFamily: "Arial, sans-serif",
               textAlign: "center",
               fontSize: "1.5rem",
-              "@media(max-width: 600px)": { fontSize: "1.25rem" }, 
+              "@media(maxWidth: 600px)": { fontSize: "1.25rem" }, 
             }}
           >
             New Waitlist Request

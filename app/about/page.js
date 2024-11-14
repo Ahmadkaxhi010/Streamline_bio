@@ -11,7 +11,7 @@ export default function AboutPage() {
         <div className="relative w-full h-screen overflow-hidden">
           {/* Background Video */}
           <MuxVideo
-            src="/images/AI-driven.mp4"
+            src="/images/about.mp4"
             type="video/mp4"
             className="absolute top-0 left-0 w-full h-full object-cover"
             autoPlay
@@ -22,10 +22,17 @@ export default function AboutPage() {
           {/* Overlay Text */}
           <div className="absolute z-20 inset-0 text-white p-4 md:p-8 bg-transparent flex flex-col md:flex-row items-center justify-center md:justify-between gap-4 md:gap-6">
             <h1 className="text-3xl md:text-5xl font-extrabold mb-4">About</h1>
-            <p className="text-sm md:text-xl max-w-xl text-center md:text-justify">
-              We’re an AI and robotics company, with roots in Norway and Silicon
-              Valley. Our team is building a world where you do more of what you
-              love, while your humanoid companions handle the rest.
+            <p className="text-xs md:text-lg max-w-2xl text-center md:text-justify">
+              Streamline Bio is solving critical challenges in cell and gene
+              therapy (CGT) manufacturing process to make CGT accessible to
+              patients in need. 𝗜𝗻 𝗖𝗚𝗧, end-to-end 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻 𝗶𝘀 𝗼𝗳𝘁𝗲𝗻 𝗵𝗮𝗶𝗹𝗲𝗱 𝗮𝘀
+              𝘁𝗵𝗲 “𝗵𝗼𝗹𝘆 𝗴𝗿𝗮𝗶𝗹”, the solution to all the manufacturing problems
+              and bottlenecks. However, CGT processes are inherently complex,
+              multi-step, and notoriously variable; this makes it extremely
+              difficult to develop an one-size-fits-all automation solution.
+              That’s where we come in. Streamline Bio offers an AI-driven
+              robotics platform that not only automates but is designed to be
+              flexible, machine-agnostic, and fully digital-native.
             </p>
           </div>
         </div>

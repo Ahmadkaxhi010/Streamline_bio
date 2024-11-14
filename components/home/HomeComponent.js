@@ -12,6 +12,8 @@ const HomeComponent = () => {
   const [isLoading, setIsLoading] = useState(false);
   const secondSectionRef = useRef(null);
   const [emailError, setEmailError] = useState(false);
+  const [firstName, setFirstName] = useState(""); // New state for First Name
+  const [lastName, setLastName] = useState(""); // New state for Last Name
 
   useEffect(() => {
     AOS.init({
@@ -37,6 +39,8 @@ const HomeComponent = () => {
     const response = await fetch("/api/email/sendEmail", {
       method: "POST",
       body: JSON.stringify({
+        firstName,
+        lastName,
         email,
         companyName,
       }),
@@ -52,17 +56,24 @@ const HomeComponent = () => {
       setIsLoading(false);
       setEmail("");
       setCompanyName("");
+      setFirstName("");
+      setLastName("");
     }
   };
 
   const handleScrollToSection = () => {
     secondSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  const isEmailValid = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-  const isButtonEnabled = companyName && email && isEmailValid(email);
+  // const isEmailValid = (email) => {
+  //   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //   return emailRegex.test(email);
+  // };
+  // const isButtonEnabled = companyName && email && isEmailValid(email);
+  const isEmailValid = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  // Updated validation logic to check all fields
+  const isButtonEnabled =
+    firstName && lastName && companyName && email && isEmailValid(email);
 
   return (
     <>
@@ -197,6 +208,66 @@ const HomeComponent = () => {
         <p className="text-lg mb-8">
           Be the first to experience our AI-driven automation solution.
         </p>
+        <div className="flex flex-col gap-4 justify-center md:max-w-xl mx-auto">
+          <div className="flex flex-col md:flex-row gap-4">
+            <input
+              type="text"
+              placeholder="First Name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              className="border border-gray-300 p-3 rounded-md w-full"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              className="border border-gray-300 p-3 rounded-md w-full"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Company Name"
+            value={companyName}
+            onChange={(e) => setCompanyName(e.target.value)}
+            className="border border-gray-300 p-3 rounded-md w-full"
+          />
+          <div className="flex flex-col w-full">
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={handleEmailChange}
+              className="border border-gray-300 p-3 rounded-md w-full"
+            />
+            {emailError && (
+              <p className="text-red-500 text-sm mt-1">
+                Please enter a valid email address.
+              </p>
+            )}
+          </div>
+          <button
+            onClick={handleJoinWaitlist}
+            disabled={!isButtonEnabled}
+            className={`${
+              !isButtonEnabled ? "bg-gray-400" : "bg-blue-500 hover:bg-blue-600"
+            } text-white px-6 py-3 rounded-md font-semibold w-full md:w-auto`}
+          >
+            {isLoading ? "Joining..." : "Join Waitlist"}
+          </button>
+        </div>
+      </section>
+
+      {/* <section
+        className="py-24 px-8 bg-gray-100 text-gray-800 text-center"
+        data-aos="fade-up"
+      >
+        <h2 className="text-3xl md:text-5xl font-bold mb-8">
+          Join the Waitlist
+        </h2>
+        <p className="text-lg mb-8">
+          Be the first to experience our AI-driven automation solution.
+        </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <input
             type="text"
@@ -229,7 +300,7 @@ const HomeComponent = () => {
             {isLoading ? "Joining..." : "Join Waitlist"}
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Key Features Section */}
       <section
@@ -267,7 +338,7 @@ const HomeComponent = () => {
         <h2 className="text-3xl md:text-5xl font-bold mb-8">
           Automated Unit Operations
         </h2>
-         <MuxVideo
+        <MuxVideo
           src="/images/unit-operations.mp4"
           type="video/mp4"
           className="w-full h-full object-cover z-0"

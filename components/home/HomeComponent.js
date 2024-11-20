@@ -135,24 +135,23 @@ const HomeComponent = () => {
         </h2>
         <div className="flex flex-col md:flex-row gap-8 justify-center">
           <div className="w-full md:w-1/3">
-            <h3 className="text-xl md:text-2xl font-semibold mb-4">
-              Efficiency
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+            Throughput
             </h3>
-            <p>Increase production lines per cleanroom and operating profit.</p>
+            <p className="text-lg">Maximize throughput.</p>
           </div>
           <div className="w-full md:w-1/3">
-            <h3 className="text-xl md:text-2xl font-semibold mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">
               Scalability
             </h3>
-            <p>Ramp up or down production capacity with ease.</p>
+            <p className="text-lg">Scale with ease.</p>
           </div>
           <div className="w-full md:w-1/3">
-            <h3 className="text-xl md:text-2xl font-semibold mb-4">
-              Simplicity
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+            Plug-and-Play
             </h3>
-            <p>
-              A plug-and-play solution with minimal change to existing
-              processes.
+            <p className="text-lg">
+            Minimal change to existing processes.
             </p>
           </div>
         </div>
@@ -163,23 +162,23 @@ const HomeComponent = () => {
         className="py-24 px-8 bg-white text-gray-800 text-center"
         data-aos="fade-up"
       >
-        <h2 className="text-3xl md:text-5xl font-bold mb-8">
+        {/* <h2 className="text-3xl md:text-5xl font-bold mb-8">
           Lab Setup and Equipment
         </h2>
         <p className="text-lg mb-8">
           Explore our lab setups and equipment in detail.
-        </p>
+        </p> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* First Image */}
           <div className="flex flex-col items-center">
             <img
-              src="/images/manual.svg"
+              src="/images/Manual.svg"
               alt="Lab Setup with Prodigy, Incubator, Lab Fridge, BSC, and LOVO"
               className="w-full h-auto rounded-lg shadow-lg"
             />
             <p className="text-lg mt-4">
-              Lab setup with Prodigy, Incubator, Lab Fridge, BSC, and LOVO
+            All images shown are for illustrative purposes only.
             </p>
           </div>
 
@@ -191,7 +190,7 @@ const HomeComponent = () => {
               className="w-full h-auto rounded-lg shadow-lg"
             />
             <p className="text-lg mt-4">
-              Lab setup with Quantum, Xuri, LOVO, Prodigy, and Robotic Arm
+            All images shown are for illustrative purposes only.
             </p>
           </div>
         </div>

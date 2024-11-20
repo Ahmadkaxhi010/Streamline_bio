@@ -127,7 +127,7 @@ const HomeComponent = () => {
 
       {/* Value Proposition Section */}
       <section
-        className="py-24 px-8 bg-gray-100 text-gray-800 text-center md:flex md:flex-col md:gap-10"
+        className="py-20 px-8 bg-gray-100 text-gray-800 text-center md:flex md:flex-col md:gap-6"
         data-aos="fade-up"
       >
         <h2 className="text-3xl md:text-5xl font-bold mb-8">
@@ -135,19 +135,19 @@ const HomeComponent = () => {
         </h2>
         <div className="flex flex-col md:flex-row gap-8 justify-center">
           <div className="w-full md:w-1/3">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+            <h3 className="text-2xl md:text-3xl text-purple-600 font-semibold mb-4">
             Throughput
             </h3>
             <p className="text-lg">Maximize throughput.</p>
           </div>
           <div className="w-full md:w-1/3">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+            <h3 className="text-2xl md:text-3xl text-purple-600 font-semibold mb-4">
               Scalability
             </h3>
             <p className="text-lg">Scale with ease.</p>
           </div>
           <div className="w-full md:w-1/3">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+            <h3 className="text-2xl md:text-3xl text-purple-600 font-semibold mb-4">
             Plug-and-Play
             </h3>
             <p className="text-lg">

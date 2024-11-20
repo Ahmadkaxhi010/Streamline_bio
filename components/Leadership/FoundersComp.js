@@ -69,7 +69,7 @@ const FoundersComp = () => {
         <div className="md:w-1/2 p-6 flex items-center">
           <div className="text-left">
             <span className="text-indigo-600 font-semibold text-lg">
-              Co-Founder, President
+              Co-Founder, CBO
             </span>
             <h3 className="text-purple-600 text-2xl font-bold mt-2 mb-4">
               Dr. Yen-Po (Harvey) Chin, MD, PhD

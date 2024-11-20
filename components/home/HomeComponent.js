@@ -174,7 +174,7 @@ const HomeComponent = () => {
           {/* First Image */}
           <div className="flex flex-col items-center">
             <img
-              src="/images/home1.png"
+              src="/images/manual.svg"
               alt="Lab Setup with Prodigy, Incubator, Lab Fridge, BSC, and LOVO"
               className="w-full h-auto rounded-lg shadow-lg"
             />

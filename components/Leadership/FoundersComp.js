@@ -25,7 +25,7 @@ const FoundersComp = () => {
               </li>
               <li>10+ publications and patents in AI and robotics</li>
             </ul>
-            <div className="flex items-center mt-4">
+            {/* <div className="flex items-center mt-4">
               <Image
                 src="/images/Harvard.png"
                 alt="Harvard Logo"
@@ -39,7 +39,7 @@ const FoundersComp = () => {
                 height={40}
                 className="ml-4"
               />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center items-center p-6">
@@ -88,7 +88,7 @@ const FoundersComp = () => {
                 under 30 Asia awarded serial entrepreneur
               </li>
             </ul>
-            <div className="flex items-center mt-4">
+            {/* <div className="flex items-center mt-4">
               <Image
                 src="/images/Harvard.png"
                 alt="Harvard Logo"
@@ -102,7 +102,7 @@ const FoundersComp = () => {
                 height={40}
                 className="ml-4"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

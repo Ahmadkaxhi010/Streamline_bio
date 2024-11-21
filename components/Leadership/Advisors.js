@@ -44,7 +44,7 @@ const Advisors = () => {
                 closed deals
               </li>
             </ul>
-            <div className="flex mt-2 space-x-4">
+            {/* <div className="flex mt-2 space-x-4">
               <Image
                 src="/images/TAAV.jpeg" // Replace with actual logo path
                 alt="TAAV Logo"
@@ -57,7 +57,7 @@ const Advisors = () => {
                 width={100}
                 height={40}
               />
-            </div>
+            </div> */}
           </div>
 
           {/* Card for Dr. Rodney Rietze */}
@@ -89,7 +89,7 @@ const Advisors = () => {
                 Venture, PE, HNW investors
               </li>
             </ul>
-            <div className="flex mt-12 space-x-4">
+            {/* <div className="flex mt-12 space-x-4">
               <Image
                 src="/images/nova.png" // Replace with actual logo path
                 alt="Novartis Logo"
@@ -102,7 +102,7 @@ const Advisors = () => {
                 width={100}
                 height={40}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

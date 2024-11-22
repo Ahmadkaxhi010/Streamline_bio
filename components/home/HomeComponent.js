@@ -177,9 +177,9 @@ const HomeComponent = () => {
               alt="Lab Setup with Prodigy, Incubator, Lab Fridge, BSC, and LOVO"
               className="w-full h-auto rounded-lg shadow-lg"
             />
-            <p className="text-lg mt-4">
+            {/* <p className="text-lg mt-4">
             All images shown are for illustrative purposes only.
-            </p>
+            </p> */}
           </div>
 
           {/* Second Image */}
@@ -189,11 +189,14 @@ const HomeComponent = () => {
               alt="Lab Setup with Quantum, Xuri, LOVO, Prodigy, and Robotic Arm"
               className="w-full h-auto rounded-lg shadow-lg"
             />
-            <p className="text-lg mt-4">
+            {/* <p className="text-lg mt-4">
             All images shown are for illustrative purposes only.
-            </p>
+            </p> */}
           </div>
         </div>
+        <p className="text-lg text-center mt-4">
+            All images shown are for illustrative purposes only.
+            </p>
       </section>
 
       {/* Join Waitlist Section */}
@@ -258,7 +261,7 @@ const HomeComponent = () => {
       </section>
 
       {/* Key Features Section */}
-      <section
+      {/* <section
         className="py-24 px-8 bg-white text-gray-800 text-center md:flex md:flex-col md:gap-10"
         data-aos="fade-up"
       >
@@ -283,10 +286,10 @@ const HomeComponent = () => {
             <p>Action-centered automation for unique processes.</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Automated Unit Operations Section */}
-      <section
+      {/* <section
         className="py-24 px-8 bg-gray-100 text-gray-800 text-center"
         data-aos="fade-up"
       >
@@ -303,7 +306,7 @@ const HomeComponent = () => {
           loop
           muted
         />
-      </section>
+      </section> */}
     </>
   );
 };

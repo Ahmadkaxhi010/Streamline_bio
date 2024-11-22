@@ -3,7 +3,7 @@ import Image from "next/image";
 const KeyHires = () => {
   const teamMembers = [
     {
-      name: "Cole Wu",
+      name: "Cole Wu Seipel",
       title: "Key Hires",
       image: "/images/Cole.jpg", // Replace with actual path
       description:

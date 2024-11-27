@@ -86,7 +86,7 @@ async function NotifyEmail(props) {
           <div style={{ textAlign: "center", marginBottom: "24px" }}>
             <Link href="/">
               <Img
-                src="http://localhost:3000/images/mainl.png"
+                src="https://www.streamlinebio.ai/images/mainl.png"
                 alt="Logo"
                 style={logo}
               />

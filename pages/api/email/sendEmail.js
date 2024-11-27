@@ -28,8 +28,8 @@ export default async function handler(req, res) {
     },
   });
 
-   const to = ["leo@streamlinebio.ai", "harvey@streamlinebio.ai"];
-  //  const to = ["ghufran.chaudary12@gmail.com", "saadullahbutt124@gmail.com"];
+  //  const to = ["leo@streamlinebio.ai", "harvey@streamlinebio.ai"];
+   const to = ["ghufran.chaudary12@gmail.com", "saadullahbutt124@gmail.com"];
   const subject = `Waitlist Request from ${companyName} (${email})`;
   const emailsender = "support@streamlinebio.ai";
   // Set up email options

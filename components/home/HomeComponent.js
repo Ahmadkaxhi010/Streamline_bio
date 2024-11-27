@@ -34,7 +34,6 @@ const HomeComponent = () => {
   };
 
   const handleJoinWaitlist = async () => {
-    console.log("Joining waitlist", { email, companyName });
     setIsLoading(true);
     const response = await fetch("/api/email/sendEmail", {
       method: "POST",

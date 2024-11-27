@@ -15,35 +15,56 @@ import Link from "next/link";
 async function NotifyEmail(props) {
   const main = {
     backgroundColor: "#ffffff",
-    fontFamily: "ABC Diatype, Arial, Helvetica, sans-serif",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    color: "#333333", // Default text color
   };
 
   const container = {
     margin: "0 auto",
     padding: "20px 0 48px",
-    maxWidth: "600px", 
+    maxWidth: "600px",
     width: "100%",
   };
 
   const logo = {
     margin: "0 auto",
     display: "block",
-    maxWidth: "170px", 
+    maxWidth: "170px",
     width: "100%",
+  };
+
+  const heading = {
+    color: "#3b3b3b", // Dark gray color for heading
+    fontFamily: "Arial, sans-serif",
+    textAlign: "center",
+    fontSize: "1.5rem",
+    fontWeight: "bold",
+    lineHeight: "1.4",
+    textTransform: "uppercase",
+    letterSpacing: "1px",
+    marginBottom: "20px",
+    backgroundImage: "linear-gradient(to right, #FF7E5F, #feb47b)", // Gradient color
+    color: "transparent",
+    backgroundClip: "text", // Gradient effect on text
+    "@media(maxWidth: 600px)": {
+      fontSize: "1.25rem", // Smaller font size for mobile
+    },
   };
 
   const paragraph = {
     fontSize: "16px",
     lineHeight: "26px",
     textAlign: "justify",
-    "@media(maxWidth: 600px))": {
-      fontSize: "14px",
-      lineHeight: "22px",
+    color: "#666666", // Light gray color for text
+    "@media(maxWidth: 600px)": {
+      fontSize: "14px", // Smaller font size for mobile
+      lineHeight: "22px", // Adjust line height for mobile
     },
   };
 
   const hr = {
-    borderColor: "#cccccc",
+    borderColor: "#FF7E5F", // Gradient color for the horizontal line
+    borderWidth: "1px",
     margin: "20px 0",
   };
 
@@ -52,7 +73,7 @@ async function NotifyEmail(props) {
     fontSize: "12px",
     textAlign: "center",
     "@media(maxWidth: 600px)": {
-      fontSize: "10px",
+      fontSize: "10px", // Adjust footer font size for mobile
     },
   };
 
@@ -71,16 +92,7 @@ async function NotifyEmail(props) {
               />
             </Link>
           </div>
-          <Heading
-            as="h2"
-            style={{
-              color: "black",
-              fontFamily: "Arial, sans-serif",
-              textAlign: "center",
-              fontSize: "1.5rem",
-              "@media(maxWidth: 600px)": { fontSize: "1.25rem" }, 
-            }}
-          >
+          <Heading as="h2" style={heading}>
             New Waitlist Request
           </Heading>
 
@@ -89,6 +101,10 @@ async function NotifyEmail(props) {
             We have received a new request to join the waitlist.
           </Text>
           <Text style={paragraph}>
+            <b>First Name:</b> {props.firstName}
+            <br />
+            <b>Last Name:</b> {props.lastName}
+            <br />
             <b>Company Name:</b> {props.companyName}
             <br />
             <b>Email:</b> {props.email}
@@ -99,11 +115,12 @@ async function NotifyEmail(props) {
           </Text>
 
           <Hr style={hr} />
-
-          <Text style={footer}>
-            Streamlining CGT manufacturing for all clinical stages through
-            AI-driven automation
-          </Text>
+          <div style={{textAlign:"center"}}>
+            <Text style={footer}>
+              Streamlining CGT manufacturing for all clinical stages through
+              AI-driven automation
+            </Text>
+          </div>
         </Container>
       </Body>
     </Html>

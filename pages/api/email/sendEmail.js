@@ -7,12 +7,14 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method Not Allowed1" });
   }
 
-  const { email, companyName } = req.body;
+  const { email, companyName, firstName, lastName } = req.body;
 
   const html = await render(
     NotifyEmail({
       email,
       companyName,
+      firstName,
+      lastName,
     })
   );
 
@@ -26,12 +28,14 @@ export default async function handler(req, res) {
     },
   });
 
-  const to = "ghufran.chaudary12@gmail.com";
+  //  const to = ["leo@streamlinebio.ai", "harvey@streamlinebio.ai"];
+   const to = ["ghufran.chaudary12@gmail.com", "saadullahbutt124@gmail.com"];
+  //const to = "ghufran.chaudary12@gmail.com";
   const subject = `Waitlist Request from ${companyName} (${email})`;
-
+  const emailsender = "support@streamlinebio.ai";
   // Set up email options
   const mailOptions = {
-    from: email,
+    from: emailsender,
     to,
     subject: subject,
     html: html,
@@ -45,8 +49,6 @@ export default async function handler(req, res) {
       .json({ success: true, message: "Email sent to StreamLine" });
   } catch (error) {
     console.error("Error sending email:", error);
-    res
-      .status(500)
-      .json({ error: "Error in sending email to StreamLine." });
+    res.status(500).json({ error: "Error in sending email to StreamLine." });
   }
 }

@@ -82,7 +82,7 @@ const KeyHires = () => {
     {
       name: "Larry Huang",
       title: "Key Hires",
-      image: null, // No image for this member
+      image: "/images/Larry.jpg", // No image for this member
       description:
         "Larry Huang, Senior Software engineer, 6 years of experience in software infrastructure.",
     },

@@ -80,7 +80,7 @@ const FoundersComp = () => {
                 strategy, with a special focus on CGT biotech and CDMO
               </li>
               <li>
-                PHarvard healthtech innovation fellow focusing on business
+                Harvard healthtech innovation fellow focusing on business
                 strategy
               </li>
               <li>

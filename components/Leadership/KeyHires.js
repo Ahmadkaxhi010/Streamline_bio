@@ -67,21 +67,21 @@ const KeyHires = () => {
   const teamMembers = [
     {
       name: "Cole Wu Seipel",
-      title: "Key Hires",
+      title: "Head of Automation",
       image: "/images/Cole.jpg", // Replace with actual path
       description:
         "Cole Wu Seipel, Senior Automation engineer, Led a 7M dollars factory automation project.",
     },
     {
       name: "Melvin Liu",
-      title: "Key Hires",
+      title: "Senior Mechanical Engineer",
       image: "/images/Melvin.jpeg", // No image for this member
       description:
         "Melvin Liu, Senior Mechanical engineer, 6 years of experience in mechanical design",
     },
     {
       name: "Larry Huang",
-      title: "Key Hires",
+      title: "Senior Software Engineer",
       image: "/images/Larry.jpg", // No image for this member
       description:
         "Larry Huang, Senior Software engineer, 6 years of experience in software infrastructure.",
@@ -111,7 +111,7 @@ const KeyHires = () => {
               </div>
             )}
             <h4 className="font-bold text-2xl">{member.name}</h4>
-            {/* <p className="text-indigo-600 text-lg">{member.title}</p> */}
+            <p className="text-indigo-600 text-lg">{member.title}</p>
             {/* Hover effect */}
             <div className="absolute inset-0 bg-white bg-opacity-90 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6">
               <p className="text-gray-700 text-2xl">{member.description}</p>

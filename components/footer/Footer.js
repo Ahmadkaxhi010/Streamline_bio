@@ -41,7 +41,7 @@ export default function Footer() {
           {/* Social Media Links */}
           <div className="flex flex-col gap-2">
             <Link
-              href="#"
+              href="https://www.linkedin.com/company/streamline-bio/"
               className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
             >
               LINKEDIN

@@ -95,16 +95,16 @@ const HomeComponent = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
             Streamlining CGT Manufacturing
           </h1>
-          <p className="text-sm sm:text-lg md:text-xl lg:text-2xl max-w-lg md:max-w-2xl mb-6 md:mb-8">
+          <p className="text-sm sm:text-lg md:text-xl lg:text-2xl max-w-lg md:max-w-2xl">
             Making cell and gene therapy (CGT) accessible to all patients in
             need, in time
           </p>
-          <button
+          {/* <button
             onClick={handleScrollToSection}
             className="bg-blue-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-lg font-semibold hover:bg-blue-600 transition-all duration-200"
           >
             See how it works
-          </button>
+          </button> */}
         </div>
       </section>
 

@@ -46,7 +46,7 @@ export default function Footer() {
             >
               LINKEDIN
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
             >
@@ -69,11 +69,11 @@ export default function Footer() {
               className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
             >
               X
-            </Link>
+            </Link> */}
           </div>
 
           {/* Legal Links */}
-          <div className="flex flex-col gap-2">
+          {/* <div className="flex flex-col gap-2">
             <Link
               href="#"
               className="inline-block w-max hover:border-b-2 border-transparent border-b-[#6f6f67] transition-all duration-500 ease-in-out delay-75"
@@ -86,7 +86,7 @@ export default function Footer() {
             >
               PRIVACY & COOKIES
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
